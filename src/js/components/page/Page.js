@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
+import axios from 'axios';
+import FileUpload from '../file-upload'
  import './page.scss';
 
 class Page extends Component {
-  
+  constructor(){
+    super();
+     
+}
   render() {
-    const { workers } = this.props.workers;  
+    // const { workers ,count } = this.props.workers;  
     return (
       <div className="page">
-        <h1>{workers}</h1>
+        <div>
+           <FileUpload/>
+        </div>
       </div>
     );
   }

@@ -4,3 +4,10 @@ export const setWorkers = (workers)=>{
         payload : workers
     }
 }
+
+export const countAdd = (item)=>{
+    return{
+        type: 'ADD_COUNT',
+        payload : item
+    }
+}

@@ -3,8 +3,9 @@ import * as workersActions from '../actions/workers';
 import Page from '../components/page/Page';
 import {bindActionCreators} from 'redux';
 
-const mapStateToProps = ({ workers })=>({
-    workers   
+const mapStateToProps = ({ workers , count })=>({
+    workers ,
+    count  
 });
 
 const mapDispatchToProps = dispatch =>({
